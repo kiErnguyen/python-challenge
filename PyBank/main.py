@@ -33,7 +33,7 @@ total = sum(total_profit_losses)
 # Calculating monthly change and finding the average.
 monthly_change = []
 for i in range(len(total_profit_losses)-1):
-    monthly_change.append(total_profit_losses[i+1]-total_profit_losses[i])
+    monthly_change.append(total_profit_losses[i+1] - total_profit_losses[i])
 average_change = round(sum(monthly_change) / (len(months) - 1), 2)
 
 # Calculating and defining the month with the greats increase in profits.
